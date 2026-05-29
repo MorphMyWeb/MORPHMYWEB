@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-brand: #050505;
+}
+
+@utility glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@utility neon-border {
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+@utility purple-glow {
+  text-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+}
+
+body {
+  background-color: #050505;
+  color: #ffffff;
+}
