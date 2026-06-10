@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, Sparkles, Code, Cpu, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Sparkles, Code, Cpu, ShieldCheck, Zap, Eye, Clock } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 export default function Hero() {
@@ -96,11 +96,70 @@ export default function Hero() {
             </button>
           </motion.div>
 
+          {/* Performance & Trust Highlights Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 mb-12 w-full max-w-3xl"
+          >
+            {/* Delivery card */}
+            <div className="relative group overflow-hidden bg-white/[0.02] border border-white/5 hover:border-purple-500/25 rounded-lg p-5 transition-all duration-300 flex flex-col items-center justify-center text-center backdrop-blur-md">
+              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-purple-500/30 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+              <div className="p-3 bg-purple-500/10 rounded-full mb-3 text-purple-400 group-hover:scale-110 transition-transform duration-300">
+                <Zap size={20} className="stroke-[1.5]" />
+              </div>
+              <h3 className="text-sm font-semibold tracking-wide text-white mb-1">
+                {t('Γρήγορη Παράδοση', 'Fast Delivery')}
+              </h3>
+              <p className="text-[11px] text-gray-400 leading-normal max-w-[200px]">
+                {t(
+                  'Άμεση σχεδίαση & δημοσίευση χωρίς καθυστερήσεις.',
+                  'Swift execution & launch without unnecessary delays.'
+                )}
+              </p>
+            </div>
+
+            {/* Preview before purchase card */}
+            <div className="relative group overflow-hidden bg-white/[0.02] border border-white/5 hover:border-purple-500/25 rounded-lg p-5 transition-all duration-300 flex flex-col items-center justify-center text-center backdrop-blur-md">
+              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-purple-500/30 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+              <div className="p-3 bg-fuchsia-500/10 rounded-full mb-3 text-fuchsia-400 group-hover:scale-110 transition-transform duration-300">
+                <Eye size={20} className="stroke-[1.5]" />
+              </div>
+              <h3 className="text-sm font-semibold tracking-wide text-white mb-1">
+                {t('Δείτε την πριν Αγοράσετε', 'Preview Before Purchasing')}
+              </h3>
+              <p className="text-[11px] text-gray-400 leading-normal max-w-[200px]">
+                {t(
+                  'Δυνατότητα να δείτε το site σας live προτού πληρώσετε.',
+                  'Get a fully functional live preview of your site before buying.'
+                )}
+              </p>
+            </div>
+
+            {/* Answer timeframe card */}
+            <div className="relative group overflow-hidden bg-white/[0.02] border border-white/5 hover:border-purple-500/25 rounded-lg p-5 transition-all duration-300 flex flex-col items-center justify-center text-center backdrop-blur-md">
+              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-purple-500/30 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+              <div className="p-3 bg-cyan-500/10 rounded-full mb-3 text-cyan-400 group-hover:scale-110 transition-transform duration-300">
+                <Clock size={20} className="stroke-[1.5]" />
+              </div>
+              <h3 className="text-sm font-semibold tracking-wide text-white mb-1">
+                {t('Απάντηση εντός 2 Ωρών', 'Reply Within 2 Hours')}
+              </h3>
+              <p className="text-[11px] text-gray-400 leading-normal max-w-[200px]">
+                {t(
+                  'Άμεση επικοινωνία 24/7 για οτιδήποτε χρειαστείτε.',
+                  'Hyper-responsive customer helpdesk and custom quotes.'
+                )}
+              </p>
+            </div>
+          </motion.div>
+
           {/* Trust badges */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.5 }}
-            transition={{ duration: 1, delay: 0.4 }}
+            transition={{ duration: 1, delay: 0.5 }}
             className="grid grid-cols-3 gap-6 border-t border-white/5 pt-6 w-full max-w-sm text-center mx-auto"
           >
             <div className="flex items-center gap-2 justify-center">

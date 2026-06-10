@@ -15,6 +15,7 @@ export default function Header() {
     { id: 'hero', gr: 'Αρχική', en: 'Home' },
     { id: 'about', gr: 'Σχετικά', en: 'About' },
     { id: 'services', gr: 'Υπηρεσίες', en: 'Services' },
+    { id: 'process', gr: 'Διαδικασία', en: 'Process' },
     { id: 'contact', gr: 'Επικοινωνία', en: 'Contact' },
   ];
 

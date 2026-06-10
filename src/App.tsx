@@ -5,8 +5,10 @@ import SplashLoader from './components/SplashLoader';
 import ReflectiveBackground from './components/ReflectiveBackground';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Guarantees from './components/Guarantees';
 import About from './components/About';
 import Services from './components/Services';
+import Process from './components/Process';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -37,11 +39,17 @@ function PortfolioAppContent() {
               {/* Hero Section */}
               <Hero />
 
+              {/* Guarantees Section */}
+              <Guarantees />
+
               {/* About Section */}
               <About />
 
               {/* Services Section */}
               <Services />
+
+              {/* Process Section */}
+              <Process />
 
               {/* Contact Section */}
               <Contact />
