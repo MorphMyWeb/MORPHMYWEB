@@ -35,7 +35,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-bg-brand pt-16 pb-12 border-t border-white/5 overflow-hidden">
+    <footer className="relative bg-transparent pt-16 pb-12 border-t border-white/5 overflow-hidden">
       {/* Absolute Bottom Purple Floor Shine Glow */}
       <div className="absolute bottom-[-150px] left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none" />
 

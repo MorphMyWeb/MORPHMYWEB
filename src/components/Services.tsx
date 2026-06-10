@@ -18,7 +18,7 @@ export default function Services() {
   const { t } = useLanguage();
 
   return (
-    <section id="services" className="relative py-24 bg-bg-brand overflow-hidden border-t border-white/5">
+    <section id="services" className="relative py-24 bg-transparent overflow-hidden border-t border-white/5">
       
       {/* Visual background accents */}
       <div className="absolute top-[10%] left-[-5%] w-[30rem] h-[30rem] bg-purple-600/5 rounded-full blur-[120px] pointer-events-none" />

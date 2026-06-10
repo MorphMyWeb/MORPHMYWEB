@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { LanguageProvider } from './LanguageContext';
 import SplashLoader from './components/SplashLoader';
+import ReflectiveBackground from './components/ReflectiveBackground';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -13,7 +14,7 @@ function PortfolioAppContent() {
   const [loading, setLoading] = useState(true);
 
   return (
-    <div className="min-h-screen bg-bg-brand text-white font-sans selection:bg-purple-600/30 selection:text-white">
+    <div className="min-h-screen bg-transparent text-white font-sans selection:bg-purple-600/30 selection:text-white">
       <AnimatePresence mode="wait">
         {loading ? (
           <SplashLoader key="loader" onComplete={() => setLoading(false)} />
@@ -23,8 +24,11 @@ function PortfolioAppContent() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="flex flex-col min-h-screen"
+            className="flex flex-col min-h-screen relative"
           >
+            {/* Dynamic Reflective 4K Animated Background */}
+            <ReflectiveBackground />
+
             {/* Nav Header */}
             <Header />
 

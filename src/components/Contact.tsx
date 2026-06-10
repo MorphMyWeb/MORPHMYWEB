@@ -36,7 +36,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-24 bg-bg-brand overflow-hidden border-t border-white/5">
+    <section id="contact" className="relative py-24 bg-transparent overflow-hidden border-t border-white/5">
       
       {/* Glow backgrounds */}
       <div className="absolute top-[20%] left-[-10%] w-[35rem] h-[35rem] bg-cyan-500/5 rounded-full blur-[140px] pointer-events-none" />
@@ -132,7 +132,7 @@ export default function Contact() {
                       required
                       value={formState.email}
                       onChange={handleInputChange}
-                      placeholder="info@morphmyweb.gr"
+                      placeholder={OWNER_INFO.email}
                       className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-sm text-white text-xs focus:outline-none focus:border-purple-500 transition-all placeholder:text-zinc-600 font-light"
                     />
                   </div>

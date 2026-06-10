@@ -8,7 +8,7 @@ export default function About() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="relative py-24 bg-bg-brand overflow-hidden border-t border-white/5">
+    <section id="about" className="relative py-24 bg-transparent overflow-hidden border-t border-white/5">
       {/* Dynamic Background Elements */}
       <div className="absolute top-[40%] right-[-10%] w-[25rem] h-[25rem] bg-indigo-600/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-5 left-[5%] w-[20rem] h-[20rem] bg-purple-500/5 rounded-full blur-[90px] pointer-events-none" />

@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#050505] pt-28 pb-16"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-transparent pt-28 pb-16"
     >
       {/* Background corner blur glow orbs from Design specifications */}
       <div className="absolute -top-32 -right-32 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] pointer-events-none" />
