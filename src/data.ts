@@ -141,8 +141,8 @@ export const OWNER_INFO = {
   roleEn: 'Founder & Lead UI/UX Engineer',
   location: 'Κύμινα, Θεσσαλονίκη, Ελλάδα',
   locationEn: 'Kymina, Thessaloniki, Greece',
-  phone: '69446654',
-  phoneFormatted: '+30 6944 6654', // Added formatting for clean UI display
+  phone: '6944665447',
+  phoneFormatted: '+30 6944 665447', // Added formatting for clean UI display
   email: 'morphmywebsite@gmail.com', // Dynamically retrieved from additional metadata
   address: 'Κύμινα, Θεσσαλονίκη, Τ.Κ. 57300, Ελλάδα',
   addressEn: 'Kymina, Thessaloniki, P.C. 57300, Greece',

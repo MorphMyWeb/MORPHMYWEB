@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Github, Instagram, ArrowUp, Send, Heart } from 'lucide-react';
+import { Instagram, ArrowUp, Send, Heart } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 import Logo from './Logo';
 
@@ -105,15 +105,6 @@ export default function Footer() {
                 >
                   <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
                 </svg>
-              </a>
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noreferrer"
-                className="h-9 w-9 bg-white/5 hover:bg-purple-650/40 border border-white/10 hover:border-purple-500/30 rounded-sm flex items-center justify-center text-zinc-400 hover:text-purple-400 transition-all shadow-md"
-                aria-label="GitHub"
-              >
-                <Github size={14} />
               </a>
             </div>
 

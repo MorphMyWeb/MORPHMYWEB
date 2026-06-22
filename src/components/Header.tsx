@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Phone, Globe, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 import Logo from './Logo';
+import { OWNER_INFO } from '../data';
 
 export default function Header() {
   const { lang, setLang, t } = useLanguage();
@@ -128,7 +129,9 @@ export default function Header() {
               {/* Dedicated Phone Widget from Theme Design */}
               <div className="text-xs font-bold font-mono border-l border-white/10 pl-6 h-6 flex items-center">
                 <span className="text-purple-400 mr-1.5 font-bold uppercase tracking-wider">PH:</span>
-                <a href="tel:69446654" className="text-white hover:text-purple-400 transition-colors">69446654</a>
+                <a href={`tel:${OWNER_INFO.phone}`} className="text-white hover:text-purple-400 transition-colors">
+                  {OWNER_INFO.phone}
+                </a>
               </div>
 
               {/* Contact Button */}
@@ -200,11 +203,11 @@ export default function Header() {
             <div className="px-4 py-2">
               <p className="text-xs text-zinc-500 mb-2">{t('ΑΜΕΣΗ ΕΠΙΚΟΙΝΩΝΙΑ', 'FAST CONTACT')}</p>
               <a
-                href="tel:69446654"
+                href={`tel:${OWNER_INFO.phone}`}
                 className="flex items-center gap-2 text-sm text-purple-400 font-bold hover:text-purple-300 transition-colors"
               >
                 <Phone size={14} />
-                <span>69446654</span>
+                <span>{OWNER_INFO.phone}</span>
               </a>
             </div>
 
