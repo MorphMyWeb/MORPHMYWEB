@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Phone, Globe, ChevronRight } from 'lucide-react';
+import { Menu, X, Phone, Globe, ChevronRight, Instagram } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 import Logo from './Logo';
 import { OWNER_INFO } from '../data';
@@ -70,9 +70,45 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            {/* Logo */}
-            <div className="flex-shrink-0 cursor-pointer" onClick={() => scrollToSection('hero')}>
-              <Logo showText={true} verticalLayout={false} size="sm" className="scale-95 md:scale-100 origin-left" />
+            {/* Logo & Social Links below it */}
+            <div className="flex flex-col items-start flex-shrink-0">
+              <div className="cursor-pointer" onClick={() => scrollToSection('hero')}>
+                <Logo showText={true} verticalLayout={false} size="sm" className="scale-95 md:scale-100 origin-left" />
+              </div>
+              
+              {/* Top-left Social icons directly below logo */}
+              <div className="flex items-center gap-2.5 mt-0.5 pl-[44px] md:pl-[44px]">
+                <a
+                  href="https://www.instagram.com/morphmyweb.gr"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-zinc-500 hover:text-purple-400 transition-colors duration-300"
+                  aria-label="Instagram"
+                >
+                  <Instagram size={11} />
+                </a>
+                <span className="w-1 h-1 rounded-full bg-zinc-850" />
+                <a
+                  href="https://www.tiktok.com/@morph.my.web"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-zinc-500 hover:text-purple-400 transition-colors duration-300 flex items-center justify-center"
+                  aria-label="TikTok"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-[11px] w-[11px]"
+                  >
+                    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                  </svg>
+                </a>
+              </div>
             </div>
 
             {/* Desktop Navigation Links */}

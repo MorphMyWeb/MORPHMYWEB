@@ -78,7 +78,7 @@ export default function Footer() {
             {/* Middle Social icons list */}
             <div className="flex items-center space-x-3">
               <a
-                href="https://www.instagram.com/morphmyweb?igsh=MTdra3d4NTg5ZTBucA%3D%3D&utm_source=qr"
+                href="https://www.instagram.com/morphmyweb.gr"
                 target="_blank"
                 rel="noreferrer"
                 className="h-9 w-9 bg-white/5 hover:bg-purple-650/40 border border-white/10 hover:border-purple-500/30 rounded-sm flex items-center justify-center text-zinc-400 hover:text-purple-400 transition-all shadow-md"
