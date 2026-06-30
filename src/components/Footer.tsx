@@ -70,9 +70,6 @@ export default function Footer() {
               <p className="font-bold tracking-wide text-zinc-500 text-[10px] uppercase">
                 MORPHMYWEB &copy; 2026. {t('Με επιφύλαξη παντός δικαιώματος.', 'All rights reserved.')}
               </p>
-              <p className="text-[10px] text-zinc-600 mt-1 font-mono">
-                {t('Σχεδιάστηκε με αγάπη από τον Φώτη Μορφόπουλο στα Κύμινα Θεσσαλονίκης', 'Engineered by Fotis Morfopoulos representing Kymina, Greece')}
-              </p>
             </div>
 
             {/* Middle Social icons list */}

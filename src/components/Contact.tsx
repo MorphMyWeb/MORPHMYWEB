@@ -192,7 +192,7 @@ export default function Contact() {
                     rows={4}
                     value={formState.message}
                     onChange={handleInputChange}
-                    placeholder={t('Θέλω ένα modern e-shop για την επιχείρησή μου στα Κύμινα...', 'I require a responsive business landing page for my brand...')}
+                    placeholder={t('Θέλω ένα modern e-shop για την επιχείρησή μου...', 'I require a responsive business landing page for my brand...')}
                     className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-sm text-white text-xs focus:outline-none focus:border-purple-500 transition-all placeholder:text-zinc-600 font-light resize-none"
                   />
                 </div>
@@ -347,14 +347,14 @@ export default function Contact() {
               {/* Overlay with instructions */}
               <div className="absolute top-4 left-4 z-10 px-2.5 py-1 bg-black/95 border border-white/10 text-[10px] font-bold text-white rounded-sm uppercase tracking-wider flex items-center gap-1.5 shadow-lg">
                 <MapPin size={12} className="text-purple-400" />
-                <span>Κύμινα, Θεσσαλονίκη</span>
+                <span>Θεσσαλονίκη, Ελλάδα</span>
               </div>
 
-              {/* Google Maps iframe pointed to Kymina, GR. 
+              {/* Google Maps iframe pointed to Thessaloniki, GR. 
                   We apply custom CSS inline filters: invert, hue-rotate, grayscale to make it look incredibly cyber, sci-fi and unified! 
               */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12111.411604543501!2d22.684444535311497!3d40.61333332468453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a84e60e0d5a359%3A0xc3f5da16259e8756!2sKymina%20573%2000!5e0!3m2!1sen!2sgr!4v1700000000000!5m2!1sen!2sgr"
+                src="https://maps.google.com/maps?q=Thessaloniki,Greece&t=&z=12&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{

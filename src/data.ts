@@ -77,12 +77,12 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'project-3',
-    title: 'Kymina AgroTech Solutions',
-    titleEn: 'Kymina AgroTech Solutions',
+    title: 'AgroTech Solutions',
+    titleEn: 'AgroTech Solutions',
     category: 'Landing Page / Τεχνολογία',
     categoryEn: 'Landing Page / AgroTech',
-    description: 'Πλατφόρμα παρουσίασης έξυπνων συστημάτων άρδευσης και γεωργίας ακριβείας με έδρα τα Κύμινα Θεσσαλονίκης, εστιάζοντας στο B2B lead generation.',
-    descriptionEn: 'Agrotechnology B2B landing page for smart irrigation and precision farming systems based in Kymina, Thessaloniki. Highly conversion-driven UI.',
+    description: 'Πλατφόρμα παρουσίασης έξυπνων συστημάτων άρδευσης και γεωργίας ακριβείας, εστιάζοντας στο B2B lead generation.',
+    descriptionEn: 'Agrotechnology B2B landing page for smart irrigation and precision farming systems. Highly conversion-driven UI.',
     image: 'https://images.unsplash.com/photo-1628102476597-834c384672e4?q=80&w=800&auto=format&fit=crop',
     tags: ['React', 'CSS Gradients', 'Google Maps API', 'Formik'],
     link: '#',
@@ -139,13 +139,13 @@ export const OWNER_INFO = {
   nameEn: 'Fotis Morfopoulos',
   role: 'Founder & Lead UI/UX Engineer',
   roleEn: 'Founder & Lead UI/UX Engineer',
-  location: 'Κύμινα, Θεσσαλονίκη, Ελλάδα',
-  locationEn: 'Kymina, Thessaloniki, Greece',
+  location: 'Θεσσαλονίκη, Ελλάδα',
+  locationEn: 'Thessaloniki, Greece',
   phone: '6944665447',
   phoneFormatted: '+30 6944 665447', // Added formatting for clean UI display
   email: 'morphmywebsite@gmail.com', // Dynamically retrieved from additional metadata
-  address: 'Κύμινα, Θεσσαλονίκη, Τ.Κ. 57300, Ελλάδα',
-  addressEn: 'Kymina, Thessaloniki, P.C. 57300, Greece',
-  bio: 'O Φώτης Μορφόπουλος ίδρυσε τη MORPHMYWEB με ένα σκοπό: να μεταμορφώσει την ψηφιακή παρουσία των ελληνικών και διεθνών επιχειρήσεων. Με έδρα τα Κύμινα Θεσσαλονίκης, δημιουργούμε ιστοσελίδες που συνδυάζουν το φουτουριστικό, premium design με την κορυφαία ταχύτητα και τη στρατηγική SEO, βοηθώντας τους πελάτες μας να ξεχωρίσουν.',
-  bioEn: 'Fotis Morfopoulos founded MORPHMYWEB with one mission: to revolutionize the digital ecosystem of local and international businesses. Based in Kymina, Thessaloniki, we deliver premium, cyberpunk-grade responsive websites with blistering load times and elite SEO rankings, helping businesses outscale their competition.'
+  address: 'Θεσσαλονίκη, Ελλάδα',
+  addressEn: 'Thessaloniki, Greece',
+  bio: 'O Φώτης Μορφόπουλος ίδρυσε τη MORPHMYWEB με ένα σκοπό: να μεταμορφώσει την ψηφιακή παρουσία των ελληνικών και διεθνών επιχειρήσεων. Δημιουργούμε ιστοσελίδες που συνδυάζουν το φουτουριστικό, premium design με την κορυφαία ταχύτητα και τη στρατηγική SEO, βοηθώντας τους πελάτες μας να ξεχωρίσουν.',
+  bioEn: 'Fotis Morfopoulos founded MORPHMYWEB with one mission: to revolutionize the digital ecosystem of local and international businesses. We deliver premium, cyberpunk-grade responsive websites with blistering load times and elite SEO rankings, helping businesses outscale their competition.'
 };
