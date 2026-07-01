@@ -141,7 +141,7 @@ export default function Contact() {
                     required
                     value={formState.name}
                     onChange={handleInputChange}
-                    placeholder={t('Ιωάννης Παπαδόπουλος', 'John Doe')}
+                    placeholder={t('Ονοματεπώνυμο', 'Your Full Name')}
                     className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-sm text-white text-xs focus:outline-none focus:border-purple-500 transition-all placeholder:text-zinc-600 font-light"
                   />
                 </div>
@@ -174,7 +174,7 @@ export default function Contact() {
                       name="phone"
                       value={formState.phone}
                       onChange={handleInputChange}
-                      placeholder="6912345647"
+                      placeholder="6900000000"
                       className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-sm text-white text-xs focus:outline-none focus:border-purple-500 transition-all placeholder:text-zinc-600 font-light"
                     />
                   </div>
