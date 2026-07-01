@@ -146,6 +146,6 @@ export const OWNER_INFO = {
   email: 'morphmywebsite@gmail.com', // Dynamically retrieved from additional metadata
   address: 'Θεσσαλονίκη, Ελλάδα',
   addressEn: 'Thessaloniki, Greece',
-  bio: 'O Φώτης Μορφόπουλος ίδρυσε τη MORPHMYWEB με ένα σκοπό: να μεταμορφώσει την ψηφιακή παρουσία των ελληνικών και διεθνών επιχειρήσεων. Δημιουργούμε ιστοσελίδες που συνδυάζουν το φουτουριστικό, premium design με την κορυφαία ταχύτητα και τη στρατηγική SEO, βοηθώντας τους πελάτες μας να ξεχωρίσουν.',
-  bioEn: 'Fotis Morfopoulos founded MORPHMYWEB with one mission: to revolutionize the digital ecosystem of local and international businesses. We deliver premium, cyberpunk-grade responsive websites with blistering load times and elite SEO rankings, helping businesses outscale their competition.'
+  bio: 'Δημιουργούμε ιστοσελίδες που συνδυάζουν το φουτουριστικό, premium design με την κορυφαία ταχύτητα και τη στρατηγική SEO, βοηθώντας τους πελάτες μας να ξεχωρίσουν.',
+  bioEn: 'We deliver premium, cyberpunk-grade responsive websites with blistering load times and elite SEO rankings, helping businesses outscale their competition.'
 };

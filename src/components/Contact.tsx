@@ -336,52 +336,33 @@ export default function Contact() {
               </a>
             </motion.div>
 
-            {/* Google Map Embedding with Dark Mode Cyber Filter Accent */}
+
+            {/* Contact cards block */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative aspect-video rounded-xl overflow-hidden bg-black/40 border border-white/5 shadow-2xl group"
+              className="p-6 rounded-lg glass-card border border-white/5 bg-gradient-to-br from-purple-950/10 to-fuchsia-950/10 flex flex-col justify-between h-[180px]"
             >
-              {/* Overlay with instructions */}
-              <div className="absolute top-4 left-4 z-10 px-2.5 py-1 bg-black/95 border border-white/10 text-[10px] font-bold text-white rounded-sm uppercase tracking-wider flex items-center gap-1.5 shadow-lg">
-                <MapPin size={12} className="text-purple-400" />
-                <span>Θεσσαλονίκη, Ελλάδα</span>
+              <div>
+                <h4 className="text-xs uppercase font-mono font-bold tracking-widest text-purple-400 mb-2">
+                  {t('ΕΙΣΤΕ ΕΤΟΙΜΟΙ ΓΙΑ ΤΗ ΜΕΤΑΜΟΡΦΩΣΗ;', 'READY TO MORPH YOUR WEB?')}
+                </h4>
+                <p className="text-[11px] text-zinc-400 font-light leading-relaxed">
+                  {t(
+                    'Στείλτε μας ένα μήνυμα με τις ανάγκες σας και θα επικοινωνήσουμε μαζί σας για να σχεδιάσουμε μια δωρεάν, εξατομικευμένη πρόταση για την επιχείρησή σας. Απαντάμε σε όλα τα μηνύματα εντός 2 ωρών.',
+                    'Send us a message with your requirements and we will contact you to draft a free, personalized proposal for your business. We respond to all inquiries within 2 hours.'
+                  )}
+                </p>
               </div>
-
-              {/* Google Maps iframe pointed to Thessaloniki, GR. 
-                  We apply custom CSS inline filters: invert, hue-rotate, grayscale to make it look incredibly cyber, sci-fi and unified! 
-              */}
-              <iframe
-                src="https://maps.google.com/maps?q=Thessaloniki,Greece&t=&z=12&ie=UTF8&iwloc=&output=embed"
-                width="100%"
-                height="100%"
-                style={{
-                  border: 0,
-                  filter: 'invert(90%) hue-rotate(185deg) grayscale(85%) opacity(0.85) contrast(1.1)',
-                }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-full"
-              />
-              
-              <div className="absolute inset-0 border border-purple-500/10 pointer-events-none rounded-xl group-hover:border-purple-500/30 transition-colors duration-500" />
+              <div className="flex items-center gap-2 text-[9px] font-mono text-zinc-500 uppercase tracking-widest mt-4">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <span>{t('ΑΜΕΣΗ ΑΝΤΑΠΟΚΡΙΣΗ', 'IMMEDIATE RESPONSE ACTIVE')}</span>
+              </div>
             </motion.div>
 
-            {/* Quick Consultation Callout */}
-            <div className="p-5 rounded-lg glass-card border border-white/5 flex items-center gap-4">
-              <div className="p-2.5 bg-white/5 border border-white/10 rounded-sm text-zinc-400">
-                <Clock size={16} />
-              </div>
-              <p className="text-[11px] text-gray-400 font-light leading-relaxed">
-                {t(
-                  'Ώρες επικοινωνίας: Δευτέρα - Σάββατο, 09:00 - 21:00. Απαντάμε άμεσα σε κλήσεις και email.',
-                  'Responding Hours: Monday - Saturday, 09:00 - 21:00 UTC+2. Direct designer access.'
-                )}
-              </p>
-            </div>
+
 
           </div>
 
