@@ -143,7 +143,7 @@ export const OWNER_INFO = {
   locationEn: 'Thessaloniki, Greece',
   phone: '6944665447',
   phoneFormatted: '+30 6944 665447', // Added formatting for clean UI display
-  email: 'morphmywebsite@gmail.com', // Dynamically retrieved from additional metadata
+  email: 'info@morphmyweb.gr', // Dynamically retrieved from additional metadata
   address: 'Θεσσαλονίκη, Ελλάδα',
   addressEn: 'Thessaloniki, Greece',
   bio: 'Δημιουργούμε ιστοσελίδες που συνδυάζουν το φουτουριστικό, premium design με την κορυφαία ταχύτητα και τη στρατηγική SEO, βοηθώντας τους πελάτες μας να ξεχωρίσουν.',

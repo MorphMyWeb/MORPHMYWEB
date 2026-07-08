@@ -517,8 +517,8 @@ export default function Contact() {
                   </ul>
                   <p className="mt-3">
                     {t('Για να ασκήσετε οποιοδήποτε από τα παραπάνω δικαιώματα, μπορείτε να επικοινωνήσετε μαζί μας στέλνοντας ένα email στο: ', 'To command any privacy actions, directly contact us at: ')}
-                    <a href="mailto:morphmywebsite@gmail.com" className="text-purple-400 underline font-semibold hover:text-purple-300">
-                      morphmywebsite@gmail.com
+                    <a href="mailto:info@morphmyweb.gr" className="text-purple-400 underline font-semibold hover:text-purple-300">
+                      info@morphmyweb.gr
                     </a>
                   </p>
                 </div>
