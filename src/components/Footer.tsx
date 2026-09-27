@@ -84,7 +84,7 @@ export default function Footer() {
                 <Instagram size={14} />
               </a>
               <a
-                href="https://www.tiktok.com/@morph.my.web"
+                href="https://www.tiktok.com/@morphmyweb.gr"
                 target="_blank"
                 rel="noreferrer"
                 className="h-9 w-9 bg-white/5 hover:bg-purple-650/40 border border-white/10 hover:border-purple-500/30 rounded-sm flex items-center justify-center text-zinc-400 hover:text-purple-400 transition-all shadow-md"

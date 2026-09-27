@@ -89,7 +89,7 @@ export default function Header() {
                 </a>
                 <span className="w-1 h-1 rounded-full bg-zinc-850" />
                 <a
-                  href="https://www.tiktok.com/@morph.my.web"
+                  href="https://www.tiktok.com/@morphmyweb.gr"
                   target="_blank"
                   rel="noreferrer"
                   className="text-zinc-500 hover:text-purple-400 transition-colors duration-300 flex items-center justify-center"
@@ -164,7 +164,7 @@ export default function Header() {
 
               {/* Dedicated Phone Widget from Theme Design */}
               <div className="text-xs font-bold font-mono border-l border-white/10 pl-6 h-6 flex items-center">
-                <span className="text-purple-400 mr-1.5 font-bold uppercase tracking-wider">PH:</span>
+                <span className="text-purple-400 mr-1.5 font-bold uppercase tracking-wider">{t('ΤΗΛ:', 'TEL:')}</span>
                 <a href={`tel:${OWNER_INFO.phone}`} className="text-white hover:text-purple-400 transition-colors">
                   {OWNER_INFO.phone}
                 </a>
