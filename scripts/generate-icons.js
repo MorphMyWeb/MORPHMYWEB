@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
+import pngToIco from 'png-to-ico';
 
 async function generate() {
   const publicDir = path.resolve('public');
@@ -26,16 +27,17 @@ async function generate() {
     console.log(`Generated ${item.name}`);
   }
 
-  // Create favicon.ico (32x32 png saved as favicon.ico or multiple sizes)
-  // Most modern browsers and Google read PNG-encoded ICO or 32x32/48x48 directly
-  const icoBuffer = await sharp(svgBuffer, { density: 300 })
-    .resize(48, 48)
-    .png()
-    .toBuffer();
-  fs.writeFileSync(path.join(publicDir, 'favicon.ico'), icoBuffer);
-  console.log('Generated favicon.ico');
+  // Create real multi-resolution binary ICO file (16x16, 32x32, 48x48)
+  const icoFiles = [
+    path.join(publicDir, 'favicon-16x16.png'),
+    path.join(publicDir, 'favicon-32x32.png'),
+    path.join(publicDir, 'favicon-48x48.png')
+  ];
+  const realIcoBuffer = await pngToIco(icoFiles);
+  fs.writeFileSync(path.join(publicDir, 'favicon.ico'), realIcoBuffer);
+  console.log('Generated true binary multi-resolution favicon.ico');
 
-  // Generate 1200x630 OpenGraph / Twitter Card Banner with the Logo, brand name and slogan
+  // Generate 1200x630 OpenGraph / Twitter Card Banner
   const ogSvg = `
   <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
     <defs>

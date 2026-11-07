@@ -20,19 +20,16 @@
     </linearGradient>
   </defs>
 
-  <!-- Dark Deep Space Blue/Black circular base mirroring the mobile screen mockup -->
-  <circle cx="64" cy="64" r="60" fill="#030308" stroke="url(#fav-glow-border)" stroke-width="2.5" />
+  <!-- Dark Deep Space Blue/Black circular base -->
+  <circle cx="64" cy="64" r="61" fill="#030308" stroke="url(#fav-glow-border)" stroke-width="3" />
 
-  <!-- Shadow Glow behind the M Logo for maximum pop and contrast -->
-  <circle cx="64" cy="64" r="36" fill="#7000FF" opacity="0.12" filter="blur(6px)" />
-
-  <!-- The MORPHMYWEB Iconic 'M' Emblem, precisely centered using translation -->
-  <g transform="translate(64, 58) scale(0.48) translate(-175, -145)">
+  <!-- The MORPHMYWEB Iconic 'M' Emblem, optimized for 16x16 and 48x48 punchy legibility -->
+  <g transform="translate(64, 60) scale(0.53) translate(-175, -145)">
     <!-- Cyan-Blue Front Helix/Stem Ribbon -->
     <path
       d="M105 215 L105 85 L205 185"
       stroke="url(#fav-cyan-blue)"
-      stroke-width="24"
+      stroke-width="27"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
@@ -41,7 +38,7 @@
     <path
       d="M145 185 L245 85 L245 215"
       stroke="url(#fav-purple-magenta)"
-      stroke-width="24"
+      stroke-width="27"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
@@ -49,17 +46,17 @@
     <!-- Interactive HTML/Code Bracket Accent ' </>' -->
     <g transform="translate(175, 208)">
       <!-- Left Anchor Bracket -->
-      <path d="M-10 -5 L-17 0 L-10 5" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M-10 -5 L-17 0 L-10 5" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
       <!-- Right Anchor Bracket -->
-      <path d="M10 -5 L17 0 L10 5" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10 -5 L17 0 L10 5" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
       <!-- Code Slash Line -->
-      <path d="M-3 7 L3 -7" stroke="#cbd5e1" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M-3 7 L3 -7" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
     </g>
 
     <!-- Coding Pixel Explosion particles dispersing on the top-right branch for tech vibe -->
-    <rect x="248" y="75" width="10" height="10" fill="#B000FF" />
-    <rect x="262" y="62" width="12" height="12" fill="#FF00D6" opacity="0.9" />
-    <rect x="278" y="78" width="8" height="8" fill="#0077FF" opacity="0.8" />
-    <rect x="258" y="48" width="7" height="7" fill="#00F0FF" opacity="0.7" />
+    <rect x="248" y="75" width="12" height="12" fill="#B000FF" />
+    <rect x="264" y="60" width="14" height="14" fill="#FF00D6" />
+    <rect x="282" y="76" width="10" height="10" fill="#0077FF" />
+    <rect x="260" y="44" width="9" height="9" fill="#00F0FF" />
   </g>
 </svg>
