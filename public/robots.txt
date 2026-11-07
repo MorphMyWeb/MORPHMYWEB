@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: Google-Favicon
+Allow: /
+
+Sitemap: https://morphmyweb.gr/sitemap.xml
