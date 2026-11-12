@@ -12,21 +12,18 @@
     <meta name="author" content="morphmyweb" />
     <meta name="robots" content="index, follow" />
     
-    <!-- Favicons & App Icons (Google Search, Android, Apple, Desktop) -->
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <!-- Favicons & App Icons (Strict Google Search Requirements: PNG multiples of 48 & ICO) -->
+    <link rel="icon" type="image/png" sizes="48x48" href="https://www.morphmyweb.gr/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.morphmyweb.gr/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.morphmyweb.gr/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="https://www.morphmyweb.gr/favicon-512x512.png" />
+    <link rel="icon" href="https://www.morphmyweb.gr/favicon.ico" sizes="any" />
+    <link rel="shortcut icon" href="https://www.morphmyweb.gr/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.morphmyweb.gr/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#030308" />
     <meta name="msapplication-TileColor" content="#030308" />
-    <meta name="msapplication-TileImage" content="/favicon-192x192.png" />
+    <meta name="msapplication-TileImage" content="https://www.morphmyweb.gr/favicon-192x192.png" />
 
     <!-- Canonical URL (matches Google's indexed www.morphmyweb.gr) -->
     <link rel="canonical" href="https://www.morphmyweb.gr" />
@@ -50,34 +47,44 @@
     <meta name="twitter:creator" content="@morphmyweb" />
     <meta name="twitter:title" content="morphmyweb — Premium Web Design &amp; Digital Evolution" />
     <meta name="twitter:description" content="morphmyweb — Κορυφαία κατασκευή ιστοσελίδων &amp; eshop. Επαγγελματικός σχεδιασμός, ανακατασκευή &amp; customized B2B λύσεις με έμφαση στο SEO." />
-    <meta name="twitter:image" content="https://morphmyweb.gr/og-image.png" />
+    <meta name="twitter:image" content="https://www.morphmyweb.gr/og-image.png" />
     <meta name="twitter:image:alt" content="morphmyweb Logo and Brand" />
 
-    <!-- Structured Data (JSON-LD) for Search Engines -->
+    <!-- Structured Data (JSON-LD) for Google Search Site Names & Brand Knowledge Graph -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "@id": "https://morphmyweb.gr/#organization",
-      "name": "morphmyweb",
-      "alternateName": ["MORPHMYWEB", "morphmyweb.gr", "Morph My Web"],
-      "url": "https://morphmyweb.gr",
-      "logo": "https://morphmyweb.gr/logo.png",
-      "image": "https://morphmyweb.gr/og-image.png",
-      "description": "morphmyweb — Κορυφαία κατασκευή ιστοσελίδων & eshop. Επαγγελματική σχεδίαση, ανακατασκευή ιστοσελίδων, εταιρικές παρουσιάσεις & customized λύσεις με έμφαση στο SEO.",
-      "email": "info@morphmyweb.gr",
-      "telephone": "+306983050162",
-      "priceRange": "€€",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Θεσσαλονίκη",
-        "addressCountry": "GR"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://www.morphmyweb.gr/#website",
+        "name": "morphmyweb",
+        "alternateName": ["MORPHMYWEB", "morphmyweb.gr", "Morph My Web"],
+        "url": "https://www.morphmyweb.gr/"
       },
-      "sameAs": [
-        "https://www.instagram.com/morphmyweb.gr",
-        "https://www.tiktok.com/@morphmyweb.gr"
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "@id": "https://www.morphmyweb.gr/#organization",
+        "name": "morphmyweb",
+        "alternateName": ["MORPHMYWEB", "morphmyweb.gr", "Morph My Web"],
+        "url": "https://www.morphmyweb.gr/",
+        "logo": "https://www.morphmyweb.gr/logo.png",
+        "image": "https://www.morphmyweb.gr/og-image.png",
+        "description": "morphmyweb — Κορυφαία κατασκευή ιστοσελίδων & eshop. Επαγγελματική σχεδίαση, ανακατασκευή ιστοσελίδων, εταιρικές παρουσιάσεις & customized λύσεις με έμφαση στο SEO.",
+        "email": "info@morphmyweb.gr",
+        "telephone": "+306983050162",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Θεσσαλονίκη",
+          "addressCountry": "GR"
+        },
+        "sameAs": [
+          "https://www.instagram.com/morphmyweb.gr",
+          "https://www.tiktok.com/@morphmyweb.gr"
+        ]
+      }
+    ]
     </script>
   </head>
   <body>

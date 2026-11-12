@@ -1,7 +1,14 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
 User-agent: Google-Favicon
 Allow: /
 
 Sitemap: https://morphmyweb.gr/sitemap.xml
+Sitemap: https://www.morphmyweb.gr/sitemap.xml
